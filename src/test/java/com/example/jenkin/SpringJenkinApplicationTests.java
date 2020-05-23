@@ -12,6 +12,7 @@ class SpringJenkinApplicationTests {
 	public static Logger logger = LoggerFactory.getLogger(SpringJenkinApplicationTests.class);
 	@Test
 	void contextLoads() {
+		logger.info("****** Before Execution *****");
 		Assert.doesNotContain("Test", "daf");
 		logger.info("Execute successfully..");
 	}
